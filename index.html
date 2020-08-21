@@ -9,8 +9,9 @@
 
 <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-	<title></title>
-	<link rel="stylesheet" href="styles.css">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="cproject.js"></script>
   
 
 </head>
@@ -40,6 +41,38 @@
 
 </ul>
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+<!-- tables -->
+<div id="first" class="tabcontent">
+  <h1>First Group</h1>
+  <p>COVID-19 THREAT LEVEL - LOW RISK - RESUME NORMAL ACTIVITIES<br>
+
+COVID-19 presents a low risk to the community because it is contained or it is no longer transmitting because there is sufficient treatment or because a vaccine is available and sufficiently deployed. Hospitals are able to serve clients with no concern.  </p>
+</div>
+
+<div id="second" class="tabcontent">
+  <h1>Second Group</h1>
+  <p>COVID-19 THREAT LEVEL - MODERATE RISK - STAY VIGILANT<br>
+
+COVID-19 is spreading in the community but is controlled and there is a clear reduction of spread. Testing and contact tracing capacity is not strained. Hospitals and health care system are meeting demand.  </p> 
+</div>
+
+<div id="third" class="tabcontent">
+  <h1>Third Group</h1>
+  <p>COVID-19 THREAT LEVEL - EXTREME RISK - STAY HOME<br>
+
+Severe and uncontrolled level of COVID-19 infection is spreading in the community and overwhelming the health care system. Outbreaks are spreading rapidly and testing and contract tracing is strained or above capacity. Hospitals are at capacity or overwhelmed. </p>
+</div>
+
+
+<center>
+<button class="tablink" onclick="openGroup('first', this, 'green')" id="defaultOpen">Green Classification</button>
+<button class="tablink" onclick="openGroup('second', this, 'orange')">Orange Classification</button>
+<button class="tablink" onclick="openGroup('third', this, 'red')">Red Classification</button>
+
+</center>
 
 
 
@@ -48,26 +81,6 @@
 
   <!-- slide text -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
- 
-</body>
 <footer>
 <div class="ticker-wrap">
 <div class="ticker">
@@ -85,7 +98,11 @@
 </div>
 
 </footer>
-</html>
+ 
 
+
+ 
+</body>
+</html>
 
 
