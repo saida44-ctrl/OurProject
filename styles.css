@@ -2,7 +2,6 @@ body {
   margin: 0;
   font-family: Arial;
   font-size: 17px;
-
 }
 
 .header {
@@ -254,7 +253,7 @@ h1 {
 footer {
     display: flex;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
 }
 
 
@@ -370,3 +369,37 @@ span.price {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
+
+
+
+
+/* table */
+
+.tablink {
+  background-color: #555;
+  color: white;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 27%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+#first {background-color:green;}
+#second {background-color:orange;}
+#third {background-color:red;}
