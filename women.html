@@ -127,11 +127,13 @@ $(document).ready(function(){
 </style>
 </head>
 <body style="text-align:center">
-<img src="images/img1.JFIF" alt="children and COVID-19" width="200" height="200">
 <h2>Popup</h2>
 
+<a class="jcepopup" title="Desert" href="images/img1.JFIF" data-mediabox="1"><img title="img1.JFIF" width="200" src="images/img1.JFIF" alt="children and COVID-19" /></a>
+
+
 <div class="popup" onclick="myFunction()">Click me to toggle the popup!
-  <span class="popuptext" id="myPopup">A Simple Popup!</span>
+  <span class="popuptext" id="myPopup">Children and youth out of school due to Covid-19 closers out of school :89% of the worls studient population</span>
 </div>
 
 <script>
@@ -310,7 +312,65 @@ function showSlides(n) {
 	h1{
 		color:#8000ff;
 	}
-<h1>Click on the topic below to learn more.</h1>
+	</style>
+
+<h2>Tell us about you...</h2>
+    <form>
+        
+            <BR><label for="pseudo">Pseudo</label> :
+	<input type="text" name="pseudo" id="pseudo" required>
+	<span id="HelpPseudo"></span>
+
+
+       
+           <BR> <label for="mdp">password</label> :
+            <input type="password" name="mdp" id="mdp" required>
+            <span id="HelpeMdp"></span>
+        <label for="courriel">email</label> :
+            <input type="email" name="courriel" id="courriel" required placeholder="utilisateur@domaine.fr">
+            <span id="HelpCourriel"></span>
+        
+            <input type="checkbox" name="confirmation" id="confirmation">
+            <label for="confirmation">send me confirmation by email</label>
+        
+            <input type="radio" name="abonnement" id="abonewspromo" value="abonewspromo">
+            <label for="abonewspromo">subscribe to our newsLetter and promotions</label>
+            <br>
+            <input type="radio" name="abonnement" id="abonews" value="abonews">
+            <label for="abonews">subscribe to our newsLetter</label>
+            <br>
+            <input type="radio" name="abonnement" id="aborien" value="aborien" checked>
+            <label for="aborien">Do not subscribe</label>
+            <br>
+        
+            <label for="nationalite">Nationality :</label>
+            <select name="nationalite" id="nationalite">
+                <option value="FR" selected>frensh</option>
+                <option value="BE">Belge</option>
+                <option value="SUI">Suisse</option>
+                <option value="XX">other</option>
+            </select>
+        
+
+        <input type="submit" value="Send" id="button_send">
+        <input type="reset" value="Reset">
+    </form>
+    <script type="text/javascript">
+    	var formValid = document.getElementById('button_send');
+    	var pseudo = document.getElementById('pseudo');
+    	var missPseudo;
+    	 formValid.addEventListener('click', validation);
+
+    	 function validation(event){
+    	 	//if field i empty
+    	 	if(pseudo.empty)
+    	 	{missPseudo.text='please fill in this field'
+
+    	 	}
+    	 }
+    </script>
+
+   
 
 </body>
 </html>
